@@ -7,11 +7,11 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@matrix-widget-toolkit/api": "4.0.0",
-    "@matrix-widget-toolkit/mui": "2.1.1",
-    "@matrix-widget-toolkit/react": "2.0.4",
+    "@matrix-widget-toolkit/api": "^4.1.0",
+    "@matrix-widget-toolkit/mui": "^2.1.2",
+    "@matrix-widget-toolkit/react": "^2.0.5",
     "@mui/icons-material": "6.4.5",
-    "@mui/material": "6.4.5",
+    "@mui/material": "^6.4.7",
     "@reduxjs/toolkit": "2.5.1",
     "i18next": "24.2.2",
     "i18next-chained-backend": "4.6.2",
@@ -24,7 +24,7 @@
     "react-redux": "9.2.0",
     "react-router-dom": "7.1.5",
     "react-use": "17.6.0",
-    "rxjs": "7.8.1"
+    "rxjs": "^7.8.1"
   },
   "scripts": {
     "dev": "vite",
