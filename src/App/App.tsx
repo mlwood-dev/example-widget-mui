@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { WidgetApi, WidgetParameter } from '@matrix-widget-toolkit/api';
+import { extractWidgetParameters, WidgetApi, WidgetParameters } from '@matrix-widget-toolkit/api';
 import {
   MuiThemeProvider,
   MuiWidgetApiProvider,
@@ -45,13 +45,11 @@ export function App({
         {/* Fallback suspense if no higher one is registered (used for i18n) */}
         <Suspense fallback={<></>}>
           <MuiWidgetApiProvider
-            widgetApiPromise={widgetApiPromise}
+            widgetApiPromise={widgetApiPromise as any}
             widgetRegistration={{
               name: 'Example Widget',
               type: 'com.example.clock',
               data: { title: 'Learn more…' },
-              // Device ID is required for the WelcomePage example
-              requiredParameters: [WidgetParameter.DeviceId],
             }}
           >
             <Routes>
