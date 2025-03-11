@@ -1,11 +1,28 @@
-// Package specific tsconfig that extends the root one.
+// This is the root tsconfig that is extended by the individual packages
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    "noEmit": true
+    "noEmit": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "declaration": true
   },
   "include": ["src"],
+  "exclude": ["node_modules"],
+  // Include all source code for building
   "references": [
     {
       "path": "./tsconfig.node.json"

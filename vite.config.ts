@@ -52,7 +52,6 @@ export default defineConfig({
     fs: {
       allow: ['..'],
     },
-    allowedHosts: ['major-drinks-change.loca.lt'],
     port,
     strictPort: true,
   },
