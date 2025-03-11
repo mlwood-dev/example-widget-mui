@@ -32,7 +32,7 @@ export default defineConfig({
     target: 'es2020',
   },
   build: {
-    outDir: 'build',
+    outDir: 'dist',
     commonjsOptions: {
       strictRequires: true,
     },
